@@ -246,10 +246,16 @@ button:hover {
     width: 100%; /* Ensure it takes up full width on smaller screens */
     height: auto; /* Maintain aspect ratio */
     
-}
+  }
   .slide-image {
   display: none; /* Hide the image entirely */
-}
+  } 
+  #in-nav a {
+    margin: 5px; /* Reduce margin on smaller screens */
+    padding: 6px 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Optionally reduce font size for mobile */
+  }
+
 }
 
   
