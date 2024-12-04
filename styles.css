@@ -1,0 +1,271 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #007f7f;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+
+  h1 {
+      margin: 0;
+      font-size: 2.5em;
+  }
+  nav {
+      margin: 15px 0;
+  }
+  nav ul {
+      list-style: none;
+      padding: 0;
+  }
+  nav li {
+      display: inline;
+      margin: 0 15px;
+  }
+  nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  #in-nav {
+    margin: 25px 0; /* 25px margin above and below */
+    padding: 10px; /* Optional: add padding inside the nav */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Center-align the navigation links */
+}
+
+  #in-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 20px; /* Horizontal space between links (20px left and right) */
+    padding: 8px 15px;
+}
+  #in-nav a:hover {
+  color: #94d2bd;
+}
+  nav a:hover {
+      color: #94d2bd;
+  }
+  main {
+      padding: 20px;
+  }
+  section {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  h2 {
+      color: #007f7f;
+      border-bottom: 2px solid #007f7f;
+  
+      padding-bottom: 10px;
+  }
+  h3 {
+      color: #007f7f;
+  }
+
+  h6 {
+    color: #007f7f;
+    border-bottom: 2px solid #007f7f;
+    padding-bottom: 5px;
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+  ul {
+      margin: 10px 0;
+      padding-left: 20px;
+  }
+  footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #007f7f;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+  }
+
+  
+  /* Main Content 
+  main {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }*/
+  
+  /* Section Headings */
+  main h2 {
+    color: #007f7f;
+    margin-top: 0;
+  }
+  
+  /* Problem and Mission Sections */
+  #problem-statement, #mission-statement, #call-to-action {
+    margin-bottom: 20px;
+  }
+  
+  #call-to-action .cta-button {
+    display: inline-block;
+    background-color: #007f7f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #call-to-action .cta-button:hover {
+    background-color: #005f87;
+  }
+  
+ /* Carousel Styles */
+
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  width: 100%; /* Use 100% to fit within the parent element */
+  height: 400px;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%; /* Ensure the slide container takes full width */
+  height: 400px;
+}
+
+.slide {
+  display: flex; /* Arrange image and text side by side */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  background-color: #007f7f;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slide-image {
+  flex: 1;
+  max-width: 50%; /* Image takes up half the slide */
+  height: 100%;
+  object-fit: contain;
+  border-right: 1px solid #ddd; /* Optional separator */
+  padding-right: 10px;
+}
+
+
+
+
+/* Arrow Buttons */
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10; /* Keep arrows above other elements */
+  border-radius: 50%;
+}
+
+button.prev {
+  left: 20px; /* Adjust for better placement */
+}
+
+button.next {
+  right: 20px; /* Adjust for better placement */
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Slide Text */
+.slide-text {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text away from arrows */
+  text-align: left; /* Ensure proper alignment */
+  font-size: 20px;
+  color: #ffffff;
+  position: relative; /* Add position relative for spacing */
+  z-index: 1; /* Ensure text stays above background */
+  margin-left: 50px; /* Add spacing from the left edge */
+  margin-right: 50px; /* Add spacing from the right edge */
+}
+
+  
+.small-text {
+  font-size: 0.9em; /* Adjust size as needed */
+}
+
+#US-Map {
+  text-align: center; /* Center content inside the section, only affects inline elements */
+  margin: 0; /* Remove default margins */
+}
+
+.full-width-image {
+  display: block; /* Ensures the image is treated as a block element */
+  margin-left: auto; /* Center the image */
+  margin-right: auto; /* Center the image */
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  height: auto; /* Maintain the aspect ratio */
+}
+.full-width-imaget {
+  display: block;           /* Ensures the image is treated as a block element */
+  margin: 0 auto;          /* Centers the image horizontally */
+  max-width: 300px;        /* Set max-width to a specific value (e.g., 300px) */
+  height: auto;            /* Automatically adjusts height to maintain aspect ratio */
+  cursor: pointer;  
+}
+
+#US-Map p {
+  text-align: left; /* Align paragraphs to the left */
+  ; /* Optional: limit the width of the paragraphs for better readability */
+
+}
+.image-wrapper {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: 3%;
+}
