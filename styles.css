@@ -240,24 +240,17 @@ button:hover {
 @media (max-width: 600px) {
   .slide-text {
       font-size: 18px; /* Further reduce font size for mobile */
-      padding: 10px; /* Slight padding for spacing */
-      width: 100%; /* Text takes full width of the box */
-  }
-
-  .slide-image {
-      display: none; /* Hide the image entirely */
-  }
-
-  .slide {
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center; /* Center align the text box */
-      padding: 10px; /* Add padding for better spacing */
+      padding: 5px; /* Reduce padding even more */
   }
   .full-screen-image {
     width: 100%; /* Ensure it takes up full width on smaller screens */
     height: auto; /* Maintain aspect ratio */
+    
 }
-
+  .slide-image {
+  display: none; /* Hide the image entirely */
+}
+}
 
   
 .small-text {
