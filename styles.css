@@ -19,6 +19,7 @@ body {
   h1 {
       margin: 0;
       font-size: 2.5em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
   }
   nav {
       margin: 15px 0;
@@ -36,6 +37,7 @@ body {
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
+      font-family: Georgia;
   }
   #in-nav {
     margin: 25px 0; /* 25px margin above and below */
@@ -71,11 +73,12 @@ body {
   h2 {
       color: #007f7f;
       border-bottom: 2px solid #007f7f;
-  
+   font-family: Georgia;
       padding-bottom: 10px;
   }
   h3 {
       color: #007f7f;
+      font-family: Georgia;
   }
 
   h6 {
@@ -86,7 +89,8 @@ body {
     font-size: 24px;
     margin-bottom: 5px;
     margin-top: 5px;
-}
+    font-family: Georgia;
+    }
 
   ul {
       margin: 10px 0;
@@ -229,19 +233,31 @@ button:hover {
   position: relative; /* Add position relative for spacing */
   z-index: 1; /* Ensure text stays above background */
   margin: 0 auto; /* Center the text container */
+  font-family: 'Merriweather';
 }
 
 /* Additional media query for even smaller screens */
 @media (max-width: 600px) {
   .slide-text {
-      font-size: 14px; /* Further reduce font size for mobile */
-      padding: 5px; /* Reduce padding even more */
+      font-size: 18px; /* Further reduce font size for mobile */
+      padding: 10px; /* Slight padding for spacing */
+      width: 100%; /* Text takes full width of the box */
+  }
+
+  .slide-image {
+      display: none; /* Hide the image entirely */
+  }
+
+  .slide {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align the text box */
+      padding: 10px; /* Add padding for better spacing */
   }
   .full-screen-image {
     width: 100%; /* Ensure it takes up full width on smaller screens */
     height: auto; /* Maintain aspect ratio */
 }
-}
+
 
   
 .small-text {
@@ -280,3 +296,12 @@ button:hover {
   text-align: center;
   margin-top: 3%;
 }
+header nav {
+  border-bottom: 1px solid white; /* Adds a thin white line below the navbar */
+}
+.divider {
+  height: 1px;
+  background-color: white;
+  margin: 10px 0;
+}
+
