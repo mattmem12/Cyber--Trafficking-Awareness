@@ -218,10 +218,29 @@
             <p>For more information on recognizing and responding to human trafficking, please visit <a href="https://www.safeaustin.org/6-red-flags-of-human-trafficking-youth/">Safe Austin</a>.</p>
         </section>
         
+        <a href="#" class="back-to-top" id="back-to-top" title="Back to top">&uarr;</a>
 
 
  </main>
-    
+ <script>
+    // Get the button
+    let backToTopButton = document.getElementById("back-to-top");
+
+    // Show the button when the user scrolls down 100 pixels
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Smooth scroll to top when the button is clicked
+    backToTopButton.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
 
     <footer>
         <p>&copy; 2024 Protecting Women and Children Online</p>
